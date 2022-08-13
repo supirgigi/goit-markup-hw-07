@@ -1,0 +1,101 @@
+.footer {
+  background-color: var(--dark-bg-color);
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer__logo {
+  display: inline-block;
+  color: var(--dark-bg-text-color);
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__place {
+  margin-bottom: 9px;
+  color: var(--dark-bg-text-color);
+  @include font($lh: 24px);
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__link {
+  color: var(--footer-text-color);
+
+  @include font($fw: 500, $lh: 24px);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-social {
+  margin-right: 93px;
+}
+
+.footer-social__title {
+  margin-bottom: 20px;
+
+  color: var(--dark-bg-text-color);
+
+  @include font($fw: 700);
+  text-transform: uppercase;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.subscribe-form__form-field {
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.subscribe-form__label {
+  margin-bottom: 20px;
+
+  color: var(--dark-bg-text-color);
+
+  @include font($fw: 700);
+  text-transform: uppercase;
+}
+
+.subscribe-form__input {
+  padding: 15px 16px;
+
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2196f300;
+  color: var(--dark-bg-text-color);
+
+  &::placeholder {
+    color: var(--footer-text-color);
+
+    @include font($fs: 16px, $lh: 20px);
+  }
+}
+
+.subscribe-button__text {
+  margin-right: 10px;
+}
